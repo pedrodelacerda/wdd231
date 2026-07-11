@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Associação Comercial de Montes Claros</title>
+    <meta name="description" content="Conectando empresas, fomentando o empreendedorismo e fortalecendo a economia de Montes Claros.">    
+    <meta name="author" content="Pedro Henrique Cordeiro de Lacerda Ribeiro">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 768px)">
 </head>
 <body>
-    
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder">MOC</div>
+                <h1>Associação Comercial</h1>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Diretório</a></li>
+                    <li><a href="join.html">Fazer Parte</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn" aria-label="Alternar Tema">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Impulsionando o Futuro dos Negócios Locais</h2>
+                <p>Unimos empreendedores, geramos conexões estratégicas e defendemos o desenvolvimento econômico e social da nossa comunidade.</p>
+                <div class="hero-actions">
+                    <a href="join.html" class="btn btn-primary">Associe-se Agora</a>
+                    <a href="discover.html" class="btn btn-secondary">Conheça a Região</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid de Conteúdo Principal -->
+        <section class="home-grid">
+            
+            <!-- Card de Clima (Weather) -->
+            <article class="info-card weather-card">
+                <h3>Clima Local</h3>
+                <div class="weather-info">
+                    <div class="weather-temp">28°C</div>
+                    <div class="weather-desc">Ensolarado — Montes Claros</div>
+                </div>
+                <p class="weather-alert">Ótimo dia para o comércio de rua e networking.</p>
+            </article>
+
+            <!-- Eventos e Informações da Comunidade -->
+            <article class="info-card community-card">
+                <h3>Destaques da Comunidade</h3>
+                <p>Fique por dentro dos principais indicadores econômicos, feiras de negócios e rodadas de inovação tecnológica que movimentam o norte de Minas.</p>
+                <a href="discover.html" class="card-link">Ver dados demográficos →</a>
+            </article>
+
+            <!-- Chamadas para Ação Rápidas -->
+            <article class="info-card cta-card">
+                <h3>Networking Estratégico</h3>
+                <p>Acesse treinamentos exclusivos, mentorias corporativas e aumente a visibilidade da sua marca no mercado regional.</p>
+                <a href="join.html" class="card-link">Conheça os benefícios →</a>
+            </article>
+        </section>
+
+        <!-- Business Spotlights -->
+        <section class="spotlight-section">
+            <h2>Empresas em Destaque</h2>
+            <div class="spotlight-grid">
+                <div class="spotlight-card">
+                    <h4>Norte Tech Soluções</h4>
+                    <p class="tag">Membro Gold</p>
+                    <p>Referência em infraestrutura e transformação digital corporativa.</p>
+                    <span class="contact">contato@nortetech.com</span>
+                </div>
+                <div class="spotlight-card">
+                    <h4>Logística Montes Claros</h4>
+                    <p class="tag">Membro Silver</p>
+                    <p>Soluções inteligentes de transporte e distribuição para todo o Brasil.</p>
+                    <span class="contact">comercial@logmoc.com</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Associação Comercial de MOC</h3>
+                <p>Av. Principal, 1000 — Centro</p>
+                <p>Montes Claros - MG | CEP: 39400-000</p>
+                <p>contato@acmoc.org.br | (38) 3221-0000</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="YouTube">▶️</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+            </div>
+            <div class="footer-meta">
+                <p>WDD231 Class Project</p>
+                <p>Pedro Henrique C. L. Ribeiro</p>
+                <p>&copy; <span id="year"></span> MOC Chamber of Commerce</p>
+                <p class="last-modified">Última modificação: <span id="mod-date"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
