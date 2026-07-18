@@ -4,7 +4,7 @@
     --text-main: #334155;
     --text-muted: #64748b;
     --brand-primary: #0f172a;
-    --brand-accent: #059669;
+    --brand-accent: #047857;
     --border-color: #e2e8f0;
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
     --transition: all 0.3s ease;
@@ -24,7 +24,7 @@
 /* Estilos Globais Base */
 html {
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
 
