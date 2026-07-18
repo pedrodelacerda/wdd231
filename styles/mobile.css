@@ -37,6 +37,7 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     transition: var(--transition);
+    margin: 0;
 }
 
 /* Header e Menu Mobile */
@@ -145,62 +146,125 @@ body {
     color: var(--brand-accent);
 }
 
-.theme-btn {
-    background: none;
-    border: 1px solid var(--border-color);
-    padding: 0.5rem;
-    border-radius: 50%;
-    cursor: pointer;
-    align-self: flex-start;
-}
-
-/* Conteúdo e Cartões (Mobile) */
-.hero {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    padding: 3rem 1rem;
-    text-align: center;
-}
-
-.hero h2 { font-size: 1.75rem; margin-top: 0; }
-.hero p { color: #cbd5e1; margin-bottom: 2rem; }
-
-.hero-actions {
+/* --- NOVOS ESTILOS: Directory Controls & Buttons --- */
+.directory-controls {
+    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
 }
 
+.directory-controls h2 {
+    margin: 0;
+}
+
+.view-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
 .btn {
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
-    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
-.btn-primary { background-color: var(--brand-accent); color: #ffffff; }
-.btn-secondary { border: 1px solid #cbd5e1; color: #ffffff; }
+.btn-view {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+}
 
-.home-grid, .spotlight-section {
-    padding: 2rem 1rem;
+.btn-view.active, .btn-view:hover {
+    background-color: var(--brand-accent);
+    color: #ffffff;
+    border-color: var(--brand-accent);
+}
+
+/* --- NOVOS ESTILOS: Renderização dos Membros Dinâmicos --- */
+#directory-container {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.info-card, .spotlight-card {
+.member-card {
     background-color: var(--bg-surface);
     padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow);
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.spotlight-card { border-left: 4px solid var(--brand-accent); }
-.spotlight-card .tag { color: var(--brand-accent); font-weight: bold; font-size: 0.8rem; }
-.weather-temp { font-size: 2.2rem; font-weight: bold; color: var(--brand-accent); }
-.card-link { color: var(--brand-accent); text-decoration: none; font-weight: bold; }
+.member-card img {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.member-card h3 {
+    margin: 0.5rem 0;
+}
+
+.member-card .tagline {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.member-card hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 1rem 0;
+}
+
+.member-card p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.member-card a {
+    color: var(--brand-accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Níveis de Membro (Badges) */
+.badge {
+    margin-top: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.level-1 { background-color: var(--border-color); color: var(--text-main); }
+.level-2 { background-color: #cbd5e1; color: #0f172a; }
+.level-3 { background-color: #fef08a; color: #854d0e; } /* Gold look */
+
+/* Comportamento List View no Mobile (fira uma coluna limpa) */
+.list-view .member-card {
+    padding: 1rem;
+    text-align: left;
+    align-items: flex-start;
+}
+.list-view .member-card img, 
+.list-view .member-card .tagline, 
+.list-view .member-card hr, 
+.list-view .member-card .badge {
+    display: none; /* Esconde coisas complexas na lista mobile */
+}
 
 /* Footer (Mobile) */
 .site-footer {
@@ -216,13 +280,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-}
-
-.footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    font-size: 1.3rem;
 }
 
 .footer-meta {

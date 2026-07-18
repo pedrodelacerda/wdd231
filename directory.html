@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Member Directory</title>
+    <meta name="description" content="Business directory page for the Chamber of Commerce, showcasing local members and organizations.">
+    <meta name="author" content="Pedro Ribeiro">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <meta property="og:title" content="Chamber of Commerce - Member Directory">
+    <meta property="og:description" content="Discover and connect with local businesses in our comprehensive Chamber Directory.">
+    <meta property="og:image" content="https://[YOUR_USERNAME].github.io/wdd231/chamber/images/og-share-image.png">
+    <meta property="og:url" content="https://[YOUR_USERNAME].github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder">CC</div>
+                <h1>Chamber of Commerce</h1>
+            </div>
+            <!-- Seu botão de Hambúrguer Puro CSS -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="main-nav" id="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Controles para alternar visualização -->
+        <section class="directory-controls">
+            <h2>Business Directory</h2>
+            <div class="view-buttons">
+                <button id="grid-btn" class="btn btn-view active">Grid View</button>
+                <button id="list-btn" class="btn btn-view">List View</button>
+            </div>
+        </section>
+
+        <!-- Onde o JS vai injetar os cartões -->
+        <article id="directory-container" class="grid-view">
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div>
+                <h3>Contact Us</h3>
+                <p>123 Chamber Way, City, Region</p>
+                <p>info@chamberdomain.org | (555) 123-4567</p>
+            </div>
+            <div class="footer-social">
+                <!-- Ícones sociais se desejar -->
+            </div>
+            <div class="footer-meta">
+                <p>&copy; <span id="current-year"></span> | Pedro H. C. L. Ribeiro | WDD 231</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

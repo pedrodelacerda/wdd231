@@ -27,46 +27,67 @@
         gap: 2.5rem;
     }
 
-  
-    .hero {
-        padding: 6rem 2rem;
-    }
-
-    .hero h2 {
-        font-size: 3rem;
-    }
-
-    .hero-actions {
+    /* Ajuste de alinhamento dos controles do diretório */
+    .directory-controls {
+        max-width: 1200px;
+        margin: 0 auto;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 2rem;
     }
 
-    .home-grid {
+    /* --- COMPORTAMENTO DA GRID VIEW NO DESKTOP --- */
+    .grid-view {
         max-width: 1200px;
-        margin: 3rem auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
+        margin: 0 auto 3rem auto;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important; 
         gap: 2rem;
-        padding: 0 2rem;
+        padding: 0 2rem !important;
     }
 
-    .spotlight-section {
+    /* --- COMPORTAMENTO DA LIST VIEW NO DESKTOP --- */
+    .list-view {
         max-width: 1200px;
-        margin: 3rem auto;
-        padding: 0 2rem;
+        margin: 0 auto 3rem auto;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        padding: 0 2rem !important;
     }
 
-    .spotlight-section h2 {
-        text-align: center;
-        margin-bottom: 2rem;
+    .list-view .member-card {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 0.75rem 1.5rem !important;
+        border-radius: 6px !important;
+        text-align: left !important;
     }
 
-    .spotlight-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 2rem;
+    /* Trazer de volta os itens ocultados na lista mobile, organizando-os horizontalmente */
+    .list-view .member-card img,
+    .list-view .member-card hr {
+        display: none; /* Mantém a imagem fora para ficar uma lista limpa estilo texto */
     }
 
+    .list-view .member-card h3 {
+        margin: 0;
+        flex: 1;
+        font-size: 1rem;
+    }
+
+    .list-view .member-card p {
+        margin: 0 1rem;
+        font-size: 0.85rem;
+    }
+
+    .list-view .member-card .badge {
+        margin-top: 0;
+        display: inline-block;
+    }
+
+    /* Footer Desktop */
     .site-footer {
         padding: 3rem 2rem 1.5rem 2rem;
     }
@@ -75,18 +96,13 @@
         max-width: 1200px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         text-align: left;
         padding: 0;
     }
 
-    .footer-social {
-        justify-content: flex-start;
-        align-items: center;
-    }
-
     .footer-meta {
-        grid-column: span 3;
+        grid-column: span 2;
         display: flex;
         justify-content: space-between;
         align-items: center;

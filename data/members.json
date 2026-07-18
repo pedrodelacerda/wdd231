@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Apex Tech Solutions",
+    "address": "123 Innovation Way, Suite 100",
+    "phone": "(555) 019-2834",
+    "website": "https://example.com/apex",
+    "image": "images/logo-4.webp",
+    "membershipLevel": 3,
+    "tagline": "Driving digital transformation forward."
+  },
+  {
+    "name": "Green Valley Organics",
+    "address": "789 Meadow Lane",
+    "phone": "(555) 014-9988",
+    "website": "https://example.com/greenvalley",
+    "image": "images/logo-3.webp",
+    "membershipLevel": 2,
+    "tagline": "Fresh, local, and sustainable products."
+  },
+  {
+    "name": "Summit Financial Group",
+    "address": "456 Capital Boulevard",
+    "phone": "(555) 017-4422",
+    "website": "https://example.com/summit",
+    "image": "images/logo-2.webp",
+    "membershipLevel": 1,
+    "tagline": "Your partners in sustainable growth."
+  },
+  {
+    "name": "Beacon Marketing Agency",
+    "address": "888 Creative Plaza",
+    "phone": "(555) 012-7766",
+    "website": "https://example.com/beacon",
+    "image": "images/logo-5.webp",
+    "membershipLevel": 2,
+    "tagline": "Illuminating your brand's potential."
+  },
+  {
+    "name": "Blue Horizon Logistics",
+    "address": "101 Portside Road",
+    "phone": "(555) 015-3344",
+    "website": "https://example.com/bluehorizon",
+    "image": "images/logo-1.webp",
+    "membershipLevel": 3,
+    "tagline": "Global shipping made simple and fast."
+  },
+  {
+    "name": "Vanguard Architecture",
+    "address": "321 Blueprint Ave",
+    "phone": "(555) 011-5500",
+    "website": "https://example.com/vanguard",
+    "image": "images/logo-6.webp",
+    "membershipLevel": 1,
+    "tagline": "Designing spaces for tomorrow."
+  },
+  {
+    "name": "Copper Pot Bakery",
+    "address": "555 Artisan Row",
+    "phone": "(555) 013-1122",
+    "website": "https://example.com/copperpot",
+    "image": "images/logo-7.webp",
+    "membershipLevel": 2,
+    "tagline": "Handcrafted pastries baked daily."
+  }
+]
