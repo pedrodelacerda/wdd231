@@ -21,7 +21,6 @@
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
 }
 
-/* Estilos Globais Base */
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -40,7 +39,6 @@ body {
     margin: 0;
 }
 
-/* Header e Menu Mobile */
 .site-header {
     background-color: var(--bg-surface);
     border-bottom: 1px solid var(--border-color);
@@ -70,9 +68,10 @@ body {
     border-radius: 6px;
 }
 
-.logo-area h1 {
+.site-title {
     font-size: 1.15rem;
-    margin: 0;
+    font-weight: bold;
+    color: var(--text-main);
 }
 
 .menu-toggle {
@@ -146,7 +145,157 @@ body {
     color: var(--brand-accent);
 }
 
-/* --- NOVOS ESTILOS: Directory Controls & Buttons --- */
+.btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    transition: var(--transition);
+    border: none;
+}
+
+.btn-action-primary {
+    background-color: var(--brand-accent);
+    color: #ffffff;
+}
+
+.btn-action-primary:hover {
+    filter: brightness(1.1);
+}
+
+.btn-action-secondary {
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+}
+
+.btn-action-secondary:hover {
+    background-color: var(--border-color);
+}
+
+.hero {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(15, 23, 42, 0.95));
+    color: #ffffff;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.hero-content h1 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--brand-accent);
+}
+
+.hero-content h2 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 0.875rem;
+    margin: 0 0 0.5rem 0;
+    color: #cbd5e1;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.home-grid {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-card {
+    background-color: var(--bg-surface);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.info-card h3 {
+    margin-top: 0;
+}
+
+.card-link {
+    color: var(--brand-accent);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weather-temp {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.weather-forecast {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.weather-forecast li {
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed var(--border-color);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spotlight-section {
+    padding: 1rem;
+}
+
+.spotlight-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .directory-controls {
     padding: 1.5rem 1rem;
     display: flex;
@@ -164,15 +313,6 @@ body {
     gap: 0.5rem;
 }
 
-.btn {
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
 .btn-view {
     background-color: var(--bg-surface);
     border: 1px solid var(--border-color);
@@ -185,7 +325,6 @@ body {
     border-color: var(--brand-accent);
 }
 
-/* --- NOVOS ESTILOS: Renderização dos Membros Dinâmicos --- */
 #directory-container {
     padding: 1rem;
     display: flex;
@@ -241,7 +380,6 @@ body {
     font-weight: bold;
 }
 
-/* Níveis de Membro (Badges) */
 .badge {
     margin-top: 1rem;
     padding: 0.25rem 0.75rem;
@@ -251,9 +389,8 @@ body {
 }
 .level-1 { background-color: var(--border-color); color: var(--text-main); }
 .level-2 { background-color: #cbd5e1; color: #0f172a; }
-.level-3 { background-color: #fef08a; color: #854d0e; } /* Gold look */
+.level-3 { background-color: #fef08a; color: #854d0e; }
 
-/* Comportamento List View no Mobile (fira uma coluna limpa) */
 .list-view .member-card {
     padding: 1rem;
     text-align: left;
@@ -263,10 +400,9 @@ body {
 .list-view .member-card .tagline, 
 .list-view .member-card hr, 
 .list-view .member-card .badge {
-    display: none; /* Esconde coisas complexas na lista mobile */
+    display: none;
 }
 
-/* Footer (Mobile) */
 .site-footer {
     background-color: var(--bg-surface);
     border-top: 1px solid var(--border-color);

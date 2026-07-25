@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Associação Comercial de Montes Claros</title>
+    <title>Associação Comercial de Montes Claros - MOC Chamber</title>
     <meta name="description" content="Conectando empresas, fomentando o empreendedorismo e fortalecendo a economia de Montes Claros.">    
     <meta name="author" content="Pedro Henrique Cordeiro de Lacerda Ribeiro">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Associação Comercial de Montes Claros">
+    <meta property="og:description" content="Conectando empresas, fomentando o empreendedorismo e fortalecendo a economia de Montes Claros.">
+    <meta property="og:image" content="https://pedrohlacerda.github.io/wdd231/chamber/images/montes-claros.jpg">
+    <meta property="og:url" content="https://pedrohlacerda.github.io/wdd231/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 768px)">
+
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>    
 </head>
 <body>
 
@@ -17,7 +32,7 @@
         <div class="header-container">
             <div class="logo-area">
                 <div class="logo-placeholder">MOC</div>
-                <h1>Associação Comercial</h1>
+                <span class="site-title">Associação Comercial</span>
             </div>
             
             <button class="menu-toggle" aria-label="Abrir Menu">
@@ -37,39 +52,45 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/montes-claros.jpg">
+                <img src="images/montes-claros-800.jpg" alt="Montes Claros Commercial District" class="hero-bg" width="800" height="400">
+            </picture>
             <div class="hero-content">
+                <h1>Associação Comercial de Montes Claros</h1>
                 <h2>Impulsionando o Futuro dos Negócios Locais</h2>
                 <p>Unimos empreendedores, geramos conexões estratégicas e defendemos o desenvolvimento econômico e social da nossa comunidade.</p>
                 <div class="hero-actions">
-                    <a href="join.html" class="btn btn-primary">Associe-se Agora</a>
-                    <a href="discover.html" class="btn btn-secondary">Conheça a Região</a>
+                    <a href="join.html" class="btn btn-action-primary">Associe-se Agora</a>
+                    <a href="discover.html" class="btn btn-action-secondary">Conheça a Região</a>
                 </div>
             </div>
         </section>
 
-        <!-- Grid de Conteúdo Principal -->
         <section class="home-grid">
             
-            <!-- Card de Clima (Weather) -->
             <article class="info-card weather-card">
                 <h3>Clima Local</h3>
                 <div class="weather-info">
-                    <div class="weather-temp">28°C</div>
-                    <div class="weather-desc">Ensolarado — Montes Claros</div>
+                    <div class="weather-current">
+                        <img id="weather-icon" src="" alt="Weather Icon" width="50" height="50">
+                        <span id="weather-temp" class="weather-temp">--°C</span>
+                    </div>
+                    <div id="weather-desc" class="weather-desc">Carregando...</div>
                 </div>
-                <p class="weather-alert">Ótimo dia para o comércio de rua e networking.</p>
+                <h4>Previsão para 3 Dias:</h4>
+                <ul id="weather-forecast" class="weather-forecast">
+
+                </ul>
             </article>
 
-            <!-- Eventos e Informações da Comunidade -->
             <article class="info-card community-card">
                 <h3>Destaques da Comunidade</h3>
                 <p>Fique por dentro dos principais indicadores econômicos, feiras de negócios e rodadas de inovação tecnológica que movimentam o norte de Minas.</p>
                 <a href="discover.html" class="card-link">Ver dados demográficos →</a>
             </article>
 
-            <!-- Chamadas para Ação Rápidas -->
             <article class="info-card cta-card">
                 <h3>Networking Estratégico</h3>
                 <p>Acesse treinamentos exclusivos, mentorias corporativas e aumente a visibilidade da sua marca no mercado regional.</p>
@@ -77,22 +98,10 @@
             </article>
         </section>
 
-        <!-- Business Spotlights -->
         <section class="spotlight-section">
             <h2>Empresas em Destaque</h2>
-            <div class="spotlight-grid">
-                <div class="spotlight-card">
-                    <h4>Norte Tech Soluções</h4>
-                    <p class="tag">Membro Gold</p>
-                    <p>Referência em infraestrutura e transformação digital corporativa.</p>
-                    <span class="contact">contato@nortetech.com</span>
-                </div>
-                <div class="spotlight-card">
-                    <h4>Logística Montes Claros</h4>
-                    <p class="tag">Membro Silver</p>
-                    <p>Soluções inteligentes de transporte e distribuição para todo o Brasil.</p>
-                    <span class="contact">comercial@logmoc.com</span>
-                </div>
+            <div id="spotlight-container" class="spotlight-grid">
+                
             </div>
         </section>
     </main>
