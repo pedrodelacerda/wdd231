@@ -201,4 +201,35 @@
         align-items: center;
         margin-top: 2rem;
     }
+
+
+
+    .join-main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2.5rem;
+        row-gap: 1rem;
+        align-items: start;
+    }
+
+    .join-main h1 {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+    .form-container {
+        margin-bottom: 0;
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
 }

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação Comercial de Montes Claros - Fazer Parte</title>
+    <meta name="description" content="Inscreva-se para se tornar membro da Associação Comercial de Montes Claros e fortalecer seu negócio.">    
+    <meta name="author" content="Pedro Henrique Cordeiro de Lacerda Ribeiro">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Associação Comercial de Montes Claros - Fazer Parte">
+    <meta property="og:description" content="Inscreva-se para se tornar membro da Associação Comercial de Montes Claros e fortalecer seu negócio.">
+    <meta property="og:image" content="https://pedrodelacerda.github.io/wdd231/chamber/images/montes-claros.jpg">
+    <meta property="og:url" content="https://pedrodelacerda.github.io/wdd231/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 768px)">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder">MOC</div>
+                <span class="site-title">Associação Comercial</span>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="discover.html">Descubra</a></li>
+                    <li><a href="directory.html">Diretório</a></li>
+                    <li><a href="join.html" class="active">Fazer Parte</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn" aria-label="Alternar Tema">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="join-main">
+        <h1>Formulário de Filiação</h1>
+        
+        <section class="form-container">
+            <form method="get" action="thankyou.html" class="join-form">
+                
+                <label title="Nome">
+                    Nome*
+                    <input type="text" name="fname" id="fname" required autocomplete="given-name">
+                </label>
+
+                <label title="Sobrenome">
+                    Sobrenome*
+                    <input type="text" name="lname" id="lname" required autocomplete="family-name">
+                </label>
+
+                <label title="Cargo na Organização">
+                    Cargo na Empresa / Organização
+                    <input type="text" name="orgtitle" id="orgtitle" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}">
+                </label>
+
+                <label title="Endereço de E-mail">
+                    E-mail*
+                    <input type="email" name="email" id="email" required autocomplete="email" placeholder="exemplo@dominio.com">
+                </label>
+
+                <label title="Telefone Celular">
+                    Celular / Telefone*
+                    <input type="tel" name="phone" id="phone" required autocomplete="tel">
+                </label>
+
+                <label title="Nome da Empresa ou Organização">
+                    Nome da Empresa / Organização*
+                    <input type="text" name="organization" id="organization" required autocomplete="organization">
+                </label>
+
+                <fieldset>
+                    <legend>Nível de Membro*</legend>
+                    <label class="radio-option">
+                        <input type="radio" name="membership" value="np" required> Módulo NP (Sem Fins Lucrativos - Gratuito)
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="membership" value="bronze"> Módulo Bronze
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="membership" value="silver"> Módulo Prata
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="membership" value="gold"> Módulo Ouro
+                    </label>
+                </fieldset>
+
+                <label title="Descrição da Empresa">
+                    Descrição da Empresa / Organização
+                    <textarea name="description" id="description" rows="4"></textarea>
+                </label>
+
+                <!-- Campo oculto para registrar a data/hora do envio -->
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Enviar Inscrição" class="submit-btn">
+            </form>
+        </section>
+
+        <!-- Seção dos 4 Cards de Nível de Membro -->
+        <section class="membership-cards">
+            <h2>Níveis de Associação</h2>
+            <div class="cards-grid">
+                
+                <article class="card">
+                    <h3>Módulo NP</h3>
+                    <p>Ideal para organizações sem fins lucrativos em busca de apoio comunitário.</p>
+                    <button type="button" class="open-modal-btn" data-modal="modal-np">Saiba Mais</button>
+                </article>
+
+                <article class="card">
+                    <h3>Módulo Bronze</h3>
+                    <p>Benefícios essenciais para pequenas empresas em fase inicial.</p>
+                    <button type="button" class="open-modal-btn" data-modal="modal-bronze">Saiba Mais</button>
+                </article>
+
+                <article class="card">
+                    <h3>Módulo Prata</h3>
+                    <p>Maior visibilidade no mercado e oportunidades de networking ampliadas.</p>
+                    <button type="button" class="open-modal-btn" data-modal="modal-silver">Saiba Mais</button>
+                </article>
+
+                <article class="card">
+                    <h3>Módulo Ouro</h3>
+                    <p>Destaque premium, máxima exposição e acesso a eventos exclusivos.</p>
+                    <button type="button" class="open-modal-btn" data-modal="modal-gold">Saiba Mais</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Modais nativos em HTML5 -->
+        <dialog id="modal-np">
+            <h3>Benefícios do Módulo NP</h3>
+            <p><strong>Custo:</strong> Gratuito</p>
+            <ul>
+                <li>Inclusão no diretório da Associação</li>
+                <li>Acesso a eventos de networking comunitário</li>
+                <li>Destaque mensal no boletim informativo</li>
+            </ul>
+            <button type="button" class="close-modal-btn">Fechar</button>
+        </dialog>
+
+        <dialog id="modal-bronze">
+            <h3>Benefícios do Módulo Bronze</h3>
+            <p><strong>Custo:</strong> R$ 100 / ano</p>
+            <ul>
+                <li>Inclusão padrão no diretório</li>
+                <li>Descontos em workshops de capacitação</li>
+                <li>1 ingresso por trimestre para eventos gerais</li>
+            </ul>
+            <button type="button" class="close-modal-btn">Fechar</button>
+        </dialog>
+
+        <dialog id="modal-silver">
+            <h3>Benefícios do Módulo Prata</h3>
+            <p><strong>Custo:</strong> R$ 300 / ano</p>
+            <ul>
+                <li>Listagem em destaque no diretório</li>
+                <li>Espaço em destaque na página inicial por 1 mês</li>
+                <li>2 ingressos por trimestre para eventos gerais</li>
+            </ul>
+            <button type="button" class="close-modal-btn">Fechar</button>
+        </dialog>
+
+        <dialog id="modal-gold">
+            <h3>Benefícios do Módulo Ouro</h3>
+            <p><strong>Custo:</strong> R$ 500 / ano</p>
+            <ul>
+                <li>Posicionamento de topo no diretório</li>
+                <li>Posição permanente em destaque na página inicial</li>
+                <li>Estande gratuito na feira empresarial anual</li>
+                <li>Passe VIP para até 5 membros da equipe</li>
+            </ul>
+            <button type="button" class="close-modal-btn">Fechar</button>
+        </dialog>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Associação Comercial de MOC</h3>
+                <p>Av. Principal, 1000 — Centro</p>
+                <p>Montes Claros - MG | CEP: 39400-000</p>
+                <p>contato@acmoc.org.br | (38) 3221-0000</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="YouTube">▶️</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+            </div>
+            <div class="footer-meta">
+                <p>WDD231 Class Project</p>
+                <p>Pedro Henrique C. L. Ribeiro</p>
+                <p>&copy; <span id="year"></span> MOC Chamber of Commerce</p>
+                <p class="last-modified">Última modificação: <span id="mod-date"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
