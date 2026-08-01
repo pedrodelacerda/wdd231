@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Associação Comercial de Montes Claros - Fazer Parte</title>
+    <title>Chamber Membership Application Form - Montes Claros Chamber of Commerce</title>
     <meta name="description" content="Inscreva-se para se tornar membro da Associação Comercial de Montes Claros e fortalecer seu negócio.">    
     <meta name="author" content="Pedro Henrique Cordeiro de Lacerda Ribeiro">
     
@@ -56,65 +56,49 @@
         <section class="form-container">
             <form method="get" action="thankyou.html" class="join-form">
                 
-                <label title="Nome">
-                    Nome*
-                    <input type="text" name="fname" id="fname" required autocomplete="given-name">
-                </label>
+                <label for="fname">Nome*</label>
+                <input type="text" name="fname" id="fname" title="Please enter your first name" required autocomplete="given-name">
 
-                <label title="Sobrenome">
-                    Sobrenome*
-                    <input type="text" name="lname" id="lname" required autocomplete="family-name">
-                </label>
+                <label for="lname">Sobrenome*</label>
+                <input type="text" name="lname" id="lname" title="Please enter your last name" required autocomplete="family-name">
 
-                <label title="Cargo na Organização">
-                    Cargo na Empresa / Organização
-                    <input type="text" name="orgtitle" id="orgtitle" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}">
-                </label>
+                <label for="orgtitle">Cargo na Empresa / Organização</label>
+                <input type="text" name="orgtitle" id="orgtitle" title="Please enter your title or position in the organization" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}">
 
-                <label title="Endereço de E-mail">
-                    E-mail*
-                    <input type="email" name="email" id="email" required autocomplete="email" placeholder="exemplo@dominio.com">
-                </label>
+                <label for="email">E-mail*</label>
+                <input type="email" name="email" id="email" title="Please enter a valid email address" required autocomplete="email" placeholder="exemplo@dominio.com">
 
-                <label title="Telefone Celular">
-                    Celular / Telefone*
-                    <input type="tel" name="phone" id="phone" required autocomplete="tel">
-                </label>
+                <label for="phone">Celular / Telefone*</label>
+                <input type="tel" name="phone" id="phone" title="Please enter your mobile phone number" required autocomplete="tel">
 
-                <label title="Nome da Empresa ou Organização">
-                    Nome da Empresa / Organização*
-                    <input type="text" name="organization" id="organization" required autocomplete="organization">
-                </label>
+                <label for="organization">Nome da Empresa / Organização*</label>
+                <input type="text" name="organization" id="organization" title="Please enter your organization or business name" required autocomplete="organization">
 
                 <fieldset>
                     <legend>Nível de Membro*</legend>
                     <label class="radio-option">
-                        <input type="radio" name="membership" value="np" required> Módulo NP (Sem Fins Lucrativos - Gratuito)
+                        <input type="radio" name="membership" value="np" title="Select NP Membership level" required> Módulo NP (Sem Fins Lucrativos - Gratuito)
                     </label>
                     <label class="radio-option">
-                        <input type="radio" name="membership" value="bronze"> Módulo Bronze
+                        <input type="radio" name="membership" value="bronze" title="Select Bronze Membership level"> Módulo Bronze
                     </label>
                     <label class="radio-option">
-                        <input type="radio" name="membership" value="silver"> Módulo Prata
+                        <input type="radio" name="membership" value="silver" title="Select Silver Membership level"> Módulo Prata
                     </label>
                     <label class="radio-option">
-                        <input type="radio" name="membership" value="gold"> Módulo Ouro
+                        <input type="radio" name="membership" value="gold" title="Select Gold Membership level"> Módulo Ouro
                     </label>
                 </fieldset>
 
-                <label title="Descrição da Empresa">
-                    Descrição da Empresa / Organização
-                    <textarea name="description" id="description" rows="4"></textarea>
-                </label>
+                <label for="description">Descrição da Empresa / Organização</label>
+                <textarea name="description" id="description" rows="4" title="Please enter a description of your organization"></textarea>
 
-                <!-- Campo oculto para registrar a data/hora do envio -->
                 <input type="hidden" name="timestamp" id="timestamp">
 
                 <input type="submit" value="Enviar Inscrição" class="submit-btn">
             </form>
         </section>
 
-        <!-- Seção dos 4 Cards de Nível de Membro -->
         <section class="membership-cards">
             <h2>Níveis de Associação</h2>
             <div class="cards-grid">
@@ -146,7 +130,6 @@
             </div>
         </section>
 
-        <!-- Modais nativos em HTML5 -->
         <dialog id="modal-np">
             <h3>Benefícios do Módulo NP</h3>
             <p><strong>Custo:</strong> Gratuito</p>
