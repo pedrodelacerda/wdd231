@@ -1,0 +1,155 @@
+
+/* 
+    Color Palette Variables (Applied strictly across the entire document)
+    Primary: #0F172A (Deep Navy)
+    Accent: #0EA5E9 (Tech Teal)
+    Neutral Dark: #334155 (Slate Charcoal)
+    Neutral Light: #F8FAFC (Soft Ice Gray)
+    White / Card Fill: #FFFFFF
+*/
+:root {
+    --primary-color: #0F172A;
+    --accent-color: #0EA5E9;
+    --accent-hover: #0284C7;
+    --text-dark: #334155;
+    --bg-light: #F8FAFC;
+    --card-bg: #FFFFFF;
+    --border-color: #CBD5E1;
+    --heading-font: 'Inter', system-ui, -apple-system, sans-serif;
+    --body-font: 'Roboto', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+
+header p {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+}
+
+section {
+    background-color: var(--card-bg);
+    padding: 1.8rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p, li {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 0.5rem;
+}
+
+/* Color Palette Display Grid */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-box {
+    padding: 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.color-primary { background-color: #0F172A; color: #FFFFFF; }
+.color-accent { background-color: #0EA5E9; color: #0F172A; } /* Letra escura para contraste ideal no WAVE */
+.color-dark { background-color: #334155; color: #FFFFFF; }
+.color-light { background-color: #F8FAFC; color: #334155; }
+
+/* Typography Sample */
+.type-sample-heading {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.type-sample-body {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+/* Wireframe Section Styles */
+.wireframe-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.wireframe-img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}

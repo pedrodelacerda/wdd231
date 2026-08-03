@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintHub 3D - Individual Site Plan</title>
+    <meta name="author" content="Pedro Henrique Cordeiro de Lacerda Ribeiro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>PrintHub 3D - Individual Site Plan</h1>
+        <p>WDD 231 Course Project Planning Document</p>
+    </header>
+
+    <main>
+        <!-- 1. Site Name -->
+        <section id="site-name">
+            <h2>1. Site Name</h2>
+            <p><strong>Site Name:</strong> PrintHub 3D</p>
+            <p><strong>Reasoning:</strong> The name "PrintHub 3D" was chosen because it explicitly designates a central community hub and technical reference directory for 3D printing enthusiast hardware, filaments, and resin materials. It is concise, memorable, and directly aligns with the platform's core audience of makers, technicians, and engineering students.</p>
+            <p><strong>Optional Domain Availability:</strong> <code>printhub3d.org</code></p>
+        </section>
+
+        <!-- 2. Site Purpose -->
+        <section id="site-purpose">
+            <h2>2. Site Purpose</h2>
+            <p>The primary purpose of PrintHub 3D is to solve technical specification fragmentation across various 3D printer manufacturers (such as Voron, Flashforge, and Elegoo). The site provides the following core services and content:</p>
+            <ul>
+                <li>An interactive, searchable dynamic catalog featuring over 15 FDM/SLA 3D printers and material consumables.</li>
+                <li>Comprehensive spec comparisons including build volume, layer resolution, maximum nozzle temperatures, and resin cure times.</li>
+                <li>Client-side bookmarking functionality via LocalStorage to save favorited machine configurations.</li>
+                <li>A support and custom 3D printing quotation request portal with validated user input forms.</li>
+            </ul>
+        </section>
+
+        <!-- 3. Target Audience Scenarios -->
+        <section id="scenarios">
+            <h2>3. Target Audience Scenarios</h2>
+            <p>The target audience includes hobbyist makers, hardware engineers, and rapid prototyping technicians. Key user interaction scenarios include:</p>
+            <ul>
+                <li><strong>Scenario 1:</strong> <em>"What is the build volume, enclosure type, and maximum nozzle temperature of the Flashforge Adventurer 5M compared to custom Voron models?"</em></li>
+                <li><strong>Scenario 2:</strong> <em>"How can I filter the catalog to display only SLA/Resin materials that match my fast-curing LCD printer settings and bookmark them for my current project?"</em></li>
+                <li><strong>Scenario 3:</strong> <em>"Where can I submit a detailed custom request for a high-precision 3D print quote or technical support ticket?"</em></li>
+            </ul>
+        </section>
+
+        <!-- 4. Color Scheme -->
+        <section id="color-scheme">
+            <h2>4. Color Scheme</h2>
+            <p>The selected color scheme presents a clean, modern, high-contrast industrial aesthetic suited for technical hardware hubs:</p>
+            
+            <div class="color-grid">
+                <div class="color-box color-primary">
+                    Deep Navy<br>#0F172A<br>(Header, Headings, Footer)
+                </div>
+                <div class="color-box color-accent">
+                    Tech Teal<br>#0EA5E9<br>(Accent, Borders, Links, Buttons)
+                </div>
+                <div class="color-box color-dark">
+                    Slate Charcoal<br>#334155<br>(Primary Body Text)
+                </div>
+                <div class="color-box color-light">
+                    Soft Ice Gray<br>#F8FAFC<br>(Document & Page Background)
+                </div>
+            </div>
+
+            <h3>Color Application Guidelines:</h3>
+            <ul>
+                <li><strong>Deep Navy (#0F172A):</strong> Used for top navigation bars, section title headers, footer backdrops, and high-priority container elements.</li>
+                <li><strong>Tech Teal (#0EA5E9):</strong> Used as the primary interactive accent for call-to-action buttons, active navigation states, underlines, and hyperlink hover effects.</li>
+                <li><strong>Slate Charcoal (#334155):</strong> Used for main paragraph text to guarantee AAA WebAIM contrast compliance against light backgrounds.</li>
+                <li><strong>Soft Ice Gray (#F8FAFC):</strong> Used as the body background color across all pages to reduce eye fatigue compared to pure white.</li>
+            </ul>
+        </section>
+
+        <!-- 5. Typography -->
+        <section id="typography">
+            <h2>5. Typography</h2>
+            <p>The typography pairing balances technical clarity with clean modern sans-serif aesthetics:</p>
+
+            <h3>Primary Heading Font: Inter</h3>
+            <p class="type-sample-heading">Inter (Bold / Semi-Bold) - Sample Heading Style</p>
+            <p><strong>Application:</strong> Applied to all main document headings (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>), navigation menu labels, and prominent callout titles.</p>
+
+            <h3>Body Text Font: Roboto</h3>
+            <p class="type-sample-body">Roboto (Regular 400) - Sample paragraph text displaying specs like 220x220x250mm build volume, 500mm/s acceleration, and dual-gear extruders.</p>
+            <p><strong>Application:</strong> Applied to all general paragraph content (<code>&lt;p&gt;</code>), list elements (<code>&lt;li&gt;</code>), form input labels, and technical product card descriptions.</p>
+        </section>
+
+        <!-- 6. Wireframes -->
+        <section id="wireframe">
+            <h2>6. Wireframes (Home Page - index.html)</h2>
+            <p>Below is the complete wireframe design for the Home Page (<code>index.html</code>), illustrating the responsive layout structure for both mobile and desktop viewports:</p>
+
+            <div class="wireframe-container" style="text-align: center; margin-top: 1.5rem;">
+                <img src="images/wireframe.png" alt="PrintHub 3D Home Page Wireframe - Combined Mobile and Desktop Layouts" class="wireframe-img" style="max-width: 100%; height: auto; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PrintHub 3D Site Plan | WDD 231 Course Project</p>
+    </footer>
+
+</body>
+</html>
