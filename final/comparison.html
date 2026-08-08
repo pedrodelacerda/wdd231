@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PrintHub 3D | Compare & Saved Hardware</title>
+  <title>PrintHub 3D | Compare &amp; Saved Hardware</title>
   <meta name="description" content="Compare 3D printer specs side-by-side and manage your saved hardware list.">
   <meta name="author" content="Pedro Henrique Cordeiro de Lacerda Ribeiro">
   
-  <meta property="og:title" content="PrintHub 3D - Compare Printers">
+  <meta property="og:title" content="PrintHub 3D - Compare &amp; Saved Hardware">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/og-image.png">
-  <meta property="og:url" content="https://pedro.github.io/wdd231/final/comparison.html">
+  <meta property="og:description" content="Compare 3D printer specs side-by-side and manage your saved hardware list.">
+  <meta property="og:image" content="https://pedrodelacerda.github.io/wdd231/final/images/og-image.png">
+  <meta property="og:url" content="https://pedrodelacerda.github.io/wdd231/final/comparison.html">
 
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/mobile.css">
   <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 768px)">
@@ -26,25 +31,28 @@
   <header>
     <div class="logo-container">
       <img src="images/favicon.ico" alt="PrintHub 3D Logo" width="32" height="32">
-      <h1>PrintHub 3D</h1>
+      <span class="site-title">PrintHub 3D</span>
     </div>
     <nav>
       <button id="hamburger-btn" aria-label="Toggle navigation menu">&#9776;</button>
       <ul id="nav-menu">
         <li><a href="index.html">Catalog</a></li>
-        <li><a href="comparison.html" class="active">Comparison & Saved</a></li>
-        <li><a href="contact.html">Quote & Support</a></li>
+        <li><a href="comparison.html" class="active">Comparison &amp; Saved</a></li>
+        <li><a href="contact.html">Quote &amp; Support</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Saved Bookmarks (LocalStorage)</h2>
+    <h1>Saved Bookmarks (LocalStorage)</h1>
     <div id="saved-container" class="catalog-grid"></div>
   </main>
 
   <footer>
-    <p>&copy; <span id="current-year"></span> PrintHub 3D | <a href="attributions.html">Attributions</a> | <a href="https://youtu.be/SEU_VIDEO_LINK">Video Demonstration</a></p>
+    <p>&copy; <span id="current-year"></span> PrintHub 3D | Pedro Henrique Cordeiro de Lacerda Ribeiro</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://youtu.be/SEU_VIDEO_LINK" target="_blank" rel="noopener">Project Video Demonstration</a></p>
   </footer>
+
 </body>
 </html>
