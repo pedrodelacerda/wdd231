@@ -38,14 +38,14 @@ function renderDiscoverCards(data) {
         card.classList.add('discover-card', `card-${index + 1}`);
 
         card.innerHTML = `
-            <h2>${item.title}</h2>
+            <h2>${item.title}</h2> <!-- Deve ser h2 para vir após o h1 da página -->
             <figure>
                 <img src="${item.photo}" alt="${item.title}" loading="lazy" width="300" height="200">
             </figure>
             <address>${item.address}</address>
             <p>${item.description}</p>
             <button class="btn-learn-more" type="button">Learn More</button>
-        `;
+        `;      
 
         container.appendChild(card);
     });
