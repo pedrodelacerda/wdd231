@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra Montes Claros - MOC Chamber Discover</title>
+    <meta name="description" content="Conheça os pontos turísticos, história, cultura e destaques comerciais da região de Montes Claros.">    
+    <meta name="author" content="Pedro Henrique Cordeiro de Lacerda Ribeiro">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Descubra Montes Claros - MOC Chamber">
+    <meta property="og:description" content="Explore os principais atrativos, cultura e oportunidades na região de Montes Claros.">
+    <meta property="og:image" content="https://pedrodelacerda.github.io/wdd231/chamber/images/og-share-image.png">
+    <meta property="og:url" content="https://pedrodelacerda.github.io/wdd231/chamber/discover.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 768px)">
+
+    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-container">
+        <div class="logo-area">
+            <div class="logo-placeholder">MOC</div>
+            <span class="site-title">Associação Comercial</span>
+        </div>
+        
+        <button class="menu-toggle" aria-label="Abrir Menu">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- Classe active ajustada para o Discover -->
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Diretório</a></li>
+                <li><a href="join.html">Fazer Parte</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn" aria-label="Alternar Tema">🌙</button>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <h1>Discover Our Community</h1>
+
+        <section id="visit-message" class="visit-banner" aria-live="polite">
+        </section>
+
+        <section class="discover-grid" id="discover-container">
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Associação Comercial de MOC</h3>
+                <p>Av. Principal, 1000 — Centro</p>
+                <p>Montes Claros - MG | CEP: 39400-000</p>
+                <p>contato@acmoc.org.br | (38) 3221-0000</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="YouTube">▶️</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+            </div>
+            <div class="footer-meta">
+                <p>WDD231 Class Project</p>
+                <p>Pedro Henrique C. L. Ribeiro</p>
+                <p>&copy; <span id="year"></span> MOC Chamber of Commerce</p>
+                <p class="last-modified">Última modificação: <span id="mod-date"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
