@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrintHub 3D | Technical Hardware & Filament Catalog</title>
+  <meta name="description" content="Search and compare 3D printer hardware specs including Voron, Flashforge, and materials.">
+  <meta name="author" content="Pedro Henrique Cordeiro de Lacerda Ribeiro">
+  
+  <meta property="og:title" content="PrintHub 3D Catalog">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:url" content="https://pedro.github.io/wdd231/final/index.html">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 768px)">
+
+  <script type="module" src="scripts/main.js" defer></script>
+  <script type="module" src="scripts/catalog.mjs" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="images/favicon.ico" alt="PrintHub 3D Logo" width="32" height="32">
+      <h1>PrintHub 3D</h1>
+    </div>
+    <nav>
+      <button id="hamburger-btn" aria-label="Toggle navigation menu">&#9776;</button>
+        <ul id="nav-menu">
+            <li><a href="index.html" class="active">Catalog</a></li>
+            <li><a href="comparison.html">Comparison & Saved</a></li>
+            <li><a href="contact.html">Quote & Support</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>3D Printer & Material Technical Directory</h2>
+    
+    <section class="filter-controls" style="margin-bottom: 1.5rem;">
+      <button class="btn-primary" id="filter-all">All Hardware</button>
+      <button class="btn-primary" id="filter-fdm">FDM Printers</button>
+      <button class="btn-primary" id="filter-sla">SLA/Resin</button>
+    </section>
+
+    <section id="catalog-container" class="catalog-grid">
+    </section>
+
+    <dialog id="detail-modal">
+      <div id="modal-content"></div>
+      <button id="close-modal" class="btn-primary" style="margin-top: 1rem;">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> PrintHub 3D | Pedro Henrique Cordeiro de Lacerda Ribeiro</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://youtu.be/SEU_VIDEO_LINK" target="_blank" rel="noopener">Project Video Demonstration</a></p>
+  </footer>
+
+</body>
+</html>

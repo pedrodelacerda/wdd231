@@ -1,0 +1,137 @@
+[
+  {
+    "id": "p1",
+    "name": "Flashforge Adventurer 5M",
+    "category": "FDM",
+    "buildVolume": "220 x 220 x 220 mm",
+    "maxTemp": "280°C",
+    "speed": "600 mm/s",
+    "image": "images/printer1.webp"
+  },
+  {
+    "id": "p2",
+    "name": "Voron 2.4 R2",
+    "category": "FDM",
+    "buildVolume": "350 x 350 x 350 mm",
+    "maxTemp": "300°C",
+    "speed": "500 mm/s",
+    "image": "images/printer2.webp"
+  },
+  {
+    "id": "p3",
+    "name": "Elegoo Saturn 3 Ultra",
+    "category": "SLA",
+    "buildVolume": "218.88 x 122.88 x 260 mm",
+    "maxTemp": "N/A (Resin)",
+    "speed": "150 mm/h",
+    "image": "images/printer3.webp"
+  },
+  {
+    "id": "p4",
+    "name": "Bambu Lab X1-Carbon",
+    "category": "FDM",
+    "buildVolume": "256 x 256 x 256 mm",
+    "maxTemp": "300°C",
+    "speed": "500 mm/s",
+    "image": "images/printer4.webp"
+  },
+  {
+    "id": "p5",
+    "name": "Creality Ender 3 V3 Keystone",
+    "category": "FDM",
+    "buildVolume": "220 x 220 x 250 mm",
+    "maxTemp": "300°C",
+    "speed": "600 mm/s",
+    "image": "images/printer5.webp"
+  },
+  {
+    "id": "p6",
+    "name": "Anycubic Photon Mono M5s",
+    "category": "SLA",
+    "buildVolume": "200 x 123 x 200 mm",
+    "maxTemp": "N/A (Resin)",
+    "speed": "105 mm/h",
+    "image": "images/printer6.webp"
+  },
+  {
+    "id": "p7",
+    "name": "Prusa MK4S",
+    "category": "FDM",
+    "buildVolume": "250 x 210 x 220 mm",
+    "maxTemp": "290°C",
+    "speed": "200 mm/s",
+    "image": "images/printer7.webp"
+  },
+  {
+    "id": "p8",
+    "name": "Formlabs Form 4",
+    "category": "SLA",
+    "buildVolume": "200 x 125 x 210 mm",
+    "maxTemp": "N/A (Resin)",
+    "speed": "100 mm/h",
+    "image": "images/printer8.webp"
+  },
+  {
+    "id": "p9",
+    "name": "Voron Switchwire",
+    "category": "FDM",
+    "buildVolume": "250 x 250 x 250 mm",
+    "maxTemp": "300°C",
+    "speed": "300 mm/s",
+    "image": "images/printer9.webp"
+  },
+  {
+    "id": "p10",
+    "name": "Flashforge Guider 3",
+    "category": "FDM",
+    "buildVolume": "300 x 250 x 300 mm",
+    "maxTemp": "320°C",
+    "speed": "250 mm/s",
+    "image": "images/printer10.webp"
+  },
+  {
+    "id": "p11",
+    "name": "Elegoo Mars 4 Max",
+    "category": "SLA",
+    "buildVolume": "195.84 x 122.4 x 150 mm",
+    "maxTemp": "N/A (Resin)",
+    "speed": "70 mm/h",
+    "image": "images/printer11.webp"
+  },
+  {
+    "id": "p12",
+    "name": "Qidi Tech X-Max 3",
+    "category": "FDM",
+    "buildVolume": "325 x 325 x 315 mm",
+    "maxTemp": "350°C",
+    "speed": "600 mm/s",
+    "image": "images/printer12.webp"
+  },
+  {
+    "id": "p13",
+    "name": "Phrozen Sonic Mighty 8K",
+    "category": "SLA",
+    "buildVolume": "218 x 123 x 235 mm",
+    "maxTemp": "N/A (Resin)",
+    "speed": "70 mm/h",
+    "image": "images/printer13.webp"
+  },
+  {
+    "id": "p14",
+    "name": "Artillery Sidewinder X4",
+    "category": "FDM",
+    "buildVolume": "300 x 300 x 400 mm",
+    "maxTemp": "300°C",
+    "speed": "500 mm/s",
+    "image": "images/printer14.webp"
+  },
+  {
+    "id": "p15",
+    "name": "Uniformation GKTwo",
+    "category": "SLA",
+    "buildVolume": "228 x 128 x 245 mm",
+    "maxTemp": "N/A (Resin)",
+    "speed": "90 mm/h",
+    "image": "images/printer15.webp"
+  }
+]

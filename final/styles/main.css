@@ -1,0 +1,131 @@
+:root {
+    --navy-primary: #0F172A;
+    --teal-accent: #0284C7; /* Ajustado para alto contraste AAA sobre branco */
+    --text-body: #334155;
+    --bg-light: #F8FAFC;
+    --surface-white: #FFFFFF;
+    --border-color: #E2E8F0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-body);
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .site-title {
+    font-family: 'Inter', sans-serif;
+    color: var(--navy-primary);
+}
+
+.site-header {
+    background-color: var(--navy-primary);
+    color: white;
+    padding: 1rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Modal Styling */
+dialog.modal {
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+dialog::backdrop {
+    background: rgba(15, 23, 42, 0.7);
+}
+
+.modal-content {
+    padding: 1.5rem;
+    position: relative;
+    background: white;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Grid & Cards Layout */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-details {
+    padding: 1rem;
+}
+
+.btn-details, .btn-fav, .submit-btn {
+    background-color: var(--teal-accent);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-fav.active {
+    background-color: #0F172A;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--navy-primary);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+.site-footer a {
+    color: #38BDF8;
+}
